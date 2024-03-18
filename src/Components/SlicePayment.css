@@ -1,0 +1,46 @@
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .payment-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-container form {
+    margin-bottom: 20px;
+  }
+  
+  .payment-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .payment-container input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .credit-card-container {
+    margin-top: 20px;
+  }
+  
