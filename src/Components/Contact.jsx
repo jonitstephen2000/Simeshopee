@@ -1,8 +1,7 @@
 import React from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import styled from "styled-components";
-import "./contact.css"
+import StyledContactForm from './contact.css';
 
 const Contact = () => {
 
@@ -12,31 +11,34 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_5t0un05', 'template_930hbgs', form.current, {
+      .sendForm('service_n3rb5od', 'template_930hbgs', form.current, {
         publicKey: '2xVWe1Sor1xpAfxh0',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          window.alert('Your query is Submitted😊'); // Display popup message
+          window.location.reload(); // Refresh the page
         },
         (error) => {
           console.log('FAILED...', error.text);
         },
       );
   };
+  
   return (
     <div className="contact-page-wrapper">
       <h1 className="primary-heading">Have Question In Mind?</h1>
       <h1 className="primary-heading">Let Us Help You</h1>
-      <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 };
