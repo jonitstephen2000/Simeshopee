@@ -7,13 +7,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsMicFill } from "react-icons/bs";
 
 const Footer = () => {
-  const handleSpeakOut = () => {
-    const isConfirmed = window.confirm("Do you want to use your microphone to search?");
-    if (isConfirmed) {
-      // Start recording the voice 
-      console.log("Recording voice...");
-    }
-  };
+  // const handleSpeakOut = () => {
+  //   const isConfirmed = window.confirm("Do you want to use your microphone to search?");
+  //   if (isConfirmed) {
+  //     // Start recording the voice 
+  //     console.log("Recording voice...");
+  //   }
+  // };
 
   const redirectToTwitter = () => {
     window.open("https://twitter.com", "_blank");
@@ -65,14 +65,14 @@ const Footer = () => {
           <span>Privacy Policy</span>
         </div>
       </div>
-      <div className="about-search-box-container" style={{ position: "fixed", bottom: "35px", marginRight: "-19px" }}>
+      {/* <div className="about-search-box-container" style={{ position: "fixed", bottom: "35px", marginRight: "-19px" }}>
         <form className="search-box" action="" method="post" style={{ marginLeft: "1150px" }}>
           <button className="watch-video-button" type="button" onClick={handleSpeakOut} name="button">
             Speak Out to Search
             <BsMicFill />
           </button>
         </form>
-      </div>
+      </div> */}
       <div>
         <span style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>Copyright @ SimeShope</span>
       </div>

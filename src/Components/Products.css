@@ -1,8 +1,33 @@
-.input1{
-    width: 30%;
-    box-shadow: 0px 1px 20px 0px orange;
-    border: rgb(240, 248, 255);
-    height: 20px;
+.search-container {
+  margin-bottom: 20px; /* Add some space below the search input */
+  position: relative; /* Make it a relative positioning context */
+}
+
+.input1 {
+  width: 100%; /* Take up full width */
+  padding: 10px; /* Add padding for better appearance */
+  font-size: 16px; /* Increase font size for better readability */
+  border: 1px solid #ccc; /* Add border for visual separation */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.input1:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.search-icon {
+  position: absolute; /* Position the icon relative to its container */
+  top: 50%; /* Position it vertically in the middle */
+  right: 10px; /* Adjust the position from the left */
+  transform: translateY(-50%); /* Center it vertically */
+  color: #d5720f; /* Set the color */
+  font-weight: bold; /* Make the icon bold */
+}
+
+
+.hide-icon {
+  display: none; /* Hide the icon */
 }
 
 .card {

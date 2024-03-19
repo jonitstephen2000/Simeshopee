@@ -1,10 +1,8 @@
 import React from "react";
-
-import { FiArrowRight } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import BannerBackground from "../Components/Assets/home-banner-background.png";
 import BannerImage from "../Components/Assets/img1.png";
-
+import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
