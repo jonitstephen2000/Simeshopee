@@ -72,7 +72,7 @@ const CartPage = () => {
                               dispatch(decreaseItemQuantity(data.id))
                             }
                           >
-                            <FontAwesomeIcon icon="fa-solid fa-minus" />
+                            <i className="fas fa-minus"></i>
                           </button>
 
                           <div className="form-outline">
