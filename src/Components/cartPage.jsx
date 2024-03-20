@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import { Link } from 'react-router-dom';
 import {
   getCartTotal,
   removeItem,
@@ -57,7 +57,7 @@ const CartPage = () => {
                           title="Remove item"
                           onClick={() => dispatch(removeItem(data.id))}
                         >
-                          <i className="fas fa-trash"></i>
+                          <i className="bi bi-trash"></i>
                         </button>
                       </div>
 
@@ -72,7 +72,7 @@ const CartPage = () => {
                               dispatch(decreaseItemQuantity(data.id))
                             }
                           >
-                            <i className="fas fa-minus"></i>
+                            <i className="bi bi-dash"></i>
                           </button>
 
                           <div className="form-outline">
@@ -96,7 +96,7 @@ const CartPage = () => {
                               dispatch(increaseItemQuantity(data.id))
                             }
                           >
-                            <i className="fas fa-plus"></i>
+                            <i className="bi bi-plus"></i>
                           </button>
                         </div>
 
@@ -132,11 +132,8 @@ const CartPage = () => {
                     </li>
                   </ul>
 
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-lg btn-block"
-                  >
-                    Go to checkout
+                  <button type="button" className="btn btn-primary btn-lg btn-block">
+                    <Link to={`/slice-payment/`}>Go to checkout</Link>
                   </button>
                 </div>
               </div>
