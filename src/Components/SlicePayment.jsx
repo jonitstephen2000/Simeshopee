@@ -10,7 +10,7 @@ function CreditCardForm() {
               <h5 className="mb-0">Billing details</h5>
             </div>
             <div className="card-body">
-              <form>
+              <form id='credit-card-form'>
                 <div className="row mb-4">
                   <div className="col">
                     <div className="form-outline">
